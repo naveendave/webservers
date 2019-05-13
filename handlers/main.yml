@@ -1,0 +1,7 @@
+---
+# handlers file for roles/webservers
+- name: "(Handler: All OSs) Start NGINX"
+  service:
+    name: nginx
+    state: started
+    enabled: yes

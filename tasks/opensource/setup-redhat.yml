@@ -1,0 +1,13 @@
+---
+- name: "(Install: CentOS/RedHat) Add NGINX Repository"
+  yum_repository:
+    name: nginx
+    baseurl: "{{ nginx_repository.redhat }}"
+    description: NGINX Repository
+    enabled: yes
+    gpgcheck: yes
+
+- name: "(Install: CentOS/RedHat) Add NGINX Repository"
+  yum: name=epel-release state=latest
+    
+    
