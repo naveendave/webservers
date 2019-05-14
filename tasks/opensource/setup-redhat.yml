@@ -1,5 +1,7 @@
 ---
 - name: "(Install: CentOS/RedHat) Add NGINX Repository"
   yum: name=epel-release state=latest
-    
+
+- name: "(Install: CentOS/RedHat) Add NGINX Repository"
+  yum: name=initscripts state=latest
     
