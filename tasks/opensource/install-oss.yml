@@ -16,4 +16,3 @@
     name: nginx
     state: present
   when: nginx_install_from == "os_repository"
-  notify: "(Handler: All OSs) Start NGINX"
