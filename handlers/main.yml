@@ -1,7 +1,6 @@
 ---
 # handlers file for roles/webservers
 - name: "(Handler: All OSs) Start NGINX"
-  service:
+  systemd:
     name: nginx
     state: started
-    enabled: yes
