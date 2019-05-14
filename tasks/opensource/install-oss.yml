@@ -11,7 +11,7 @@
 - import_tasks: setup-freebsd.yml
   when: ansible_os_family == "FreeBSD"
 
-- name: "(Install: Debian/Ubuntu/CentOS/RedHat/FreeBSD) Install NGINX"
+- name: "(Install: Debian/Ubuntu/CentOS/RedHat/FreeBSD) Install NGINX..."
   package:
     name: nginx
     state: present
